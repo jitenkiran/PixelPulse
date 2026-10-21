@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PicSphere | Discover Visuals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="logo-container">
+      <h1 class="app-title">PicSphere</h1>
+      <p class="tagline">Explore stunning images across the globe</p>
+    </div>
+
+    <!-- Search Form -->
+    <form id="search-form" class="search-form">
+      <label for="search-input" class="sr-only">Search for images</label>
+      <input 
+        type="search" 
+        id="search-input" 
+        placeholder="Search photos, wallpapers, ideas..." 
+        required 
+      />
+      <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <!-- Original Feature 1: Quick-Pick Category Chips -->
+    <div class="category-chips">
+      <button type="button" class="chip">Nature</button>
+      <button type="button" class="chip">Architecture</button>
+      <button type="button" class="chip">Technology</button>
+      <button type="button" class="chip">Minimalism</button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container">
+    <!-- Original Feature 2: Result-Count / Status Placeholder -->
+    <div id="status-bar" class="status-bar">
+      <p id="result-count">Ready to search. Enter a keyword above!</p>
+    </div>
+
+    <!-- Empty Results Container (Responsive CSS Grid) -->
+    <section id="image-grid" class="results-grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
